@@ -1,3 +1,10 @@
+/* デバック用 */
+* {
+  outline: 1px solid red; /* 全要素に赤い枠線を表示 */
+}
+
+
+
 /* ヘッダー全体のスタイル */
 .header {
     /* background-color: #f8f8f8; */
@@ -6,8 +13,8 @@
     /* border-bottom: 1px solid #ddd; */
     position: fixed; /* 画面上部に固定 */
     top: 0; /* 上部からの距離を0に設定 */
-    left: 0; /* 左端を0に変更 */
-    right: 0; /* 右端も0に変更 */
+    left: 20px; /* 左端からの距離を0に設定 */
+    right: 20px; /* 左端からの距離を0に設定 */
     width: 100%; /* ヘッダーの幅を画面全体に広げる */
     z-index: 1000; /* 他の要素の上に配置する */
   }

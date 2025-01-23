@@ -6,8 +6,7 @@
     padding: 20px 20px;
     margin-bottom: 0px; /* ヘッダーとコンテンツとの間の距離を狭める */
     /* border-bottom: 1px solid #ddd; */
-    left: 0; /* 左端を0に変更 */
-    right: 0; /* 右端も0に変更 */
+   
 
     
   }
