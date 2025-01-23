@@ -241,7 +241,7 @@
       padding-left: 0px; /* 必要なら左に余白を追加 */
       text-align: left; /* 文字の左揃え */
       display: flex;
-      margin-left: -20px; /* ヘッダーの高さ分だけ余白を追加 */
+      /* margin-left: -20px; ヘッダーの高さ分だけ余白を追加 ？？？？？？？？？*/
     }
     .nav-right .nav-button {
       text-align: left; /* 各リンクの文字を左揃え */
