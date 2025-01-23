@@ -13,6 +13,14 @@
 
 </head>
 <body>
+
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+  </script>
+
+
   <!-- ヘッダー -->
   <header class="header">
     <nav class="navbar">
@@ -36,7 +44,7 @@
       <a href="C.html" class="menu-link">TOKYO JAPAN</a>
       <a href="D.html" class="menu-link">EAST EUROPE</a>
       <a href="E.html" class="menu-link">WATER AND FLOWERS</a>
-      <a href="F.html" class="menu-link">OTHER WORK</a>
+      <a href="F.html" class="menu-link">LOVE FROM</a>
       <hr width="100">
       <a href="index.html" class="menu-link">HOME</a>
       <a href="aboutme.html" class="menu-link">ABOUT&nbsp;ME</a>
@@ -45,13 +53,30 @@
 
   <!-- メインコンテンツ -->
   <main>
-    <h1 class="title">OTHER WORK</h1>
+    <h1 class="title">LOVE FROM</h1>
     <p>2025 </p>
 
     <!-- 縦1列の画像リスト -->
     <ul class="vertical-image-list">
-      <li><img src="images/work/IMG_8757.jpeg" alt="work Image 1"></li>
-      <li><img src="images/work/IMG_8762.jpeg" alt="work Image 2"></li>
+      <!-- <li><img src="images/work/1.jpeg" alt="work Image 1"></li>
+      <li><img src="images/work/2.jpeg" alt="work Image 2"></li>
+      <li><img src="images/work/3.jpeg" alt="work Image 2"></li>
+      <li><img src="images/work/4.jpeg" alt="work Image 2"></li>
+      <li><img src="images/work/5.jpeg" alt="work Image 2"></li>
+      <li><img src="images/work/6.JPG" alt="work Image 2"></li>
+      <li><img src="images/work/7.JPG" alt="work Image 2"></li>
+      <li><img src="images/work/8.jpeg" alt="work Image 2"></li> -->
+
+      <li><img src="images/work/1.jpeg" alt="work Image 1" draggable="false" oncontextmenu="return false;"></li>
+      <li><img src="images/work/2.jpeg" alt="work Image 2" draggable="false" oncontextmenu="return false;"></li>
+      <li><img src="images/work/3.jpeg" alt="work Image 3" draggable="false" oncontextmenu="return false;"></li>
+      <li><img src="images/work/4.jpeg" alt="work Image 4" draggable="false" oncontextmenu="return false;"></li>
+      <li><img src="images/work/5.jpeg" alt="work Image 5" draggable="false" oncontextmenu="return false;"></li>
+      <li><img src="images/work/6.JPG" alt="work Image 6" draggable="false" oncontextmenu="return false;"></li>
+      <li><img src="images/work/7.JPG" alt="work Image 7" draggable="false" oncontextmenu="return false;"></li>
+      <li><img src="images/work/8.jpeg" alt="work Image 8" draggable="false" oncontextmenu="return false;"></li>
+
+
 
 
    
