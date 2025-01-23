@@ -15,3 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+window.addEventListener('load', () => {
+  // オープニングアニメーションが終了した後に、コンテンツを表示する
+  const openingAnimation = document.querySelector('.opening-animation');
+  setTimeout(() => {
+    openingAnimation.style.display = 'none'; // アニメーション終了後にオープニングを非表示
+  }, 2000); // アニメーション時間（ミリ秒）
+});
+
