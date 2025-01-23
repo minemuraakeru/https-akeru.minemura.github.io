@@ -50,7 +50,7 @@ main {
   
   /* タイトルの追加装飾（任意） */
   .title {
-    font-size: 2em; /* タイトルのフォントサイズ調整 */
+    font-size: 1.6em; /* タイトルのフォントサイズ調整 */
     margin-bottom: 10px; /* タイトルと説明文の間の余白 */
 /*     margin-top: -10px; /* ネガティブ値でさらに上に移動 */ 
     margin-top: 0px; /* ネガティブ値でさらに上に移動 */
@@ -105,7 +105,7 @@ main {
 .about-section {
   display: grid; /* グリッドレイアウトを使用 */
   grid-template-columns: 1fr 1fr; /* 2カラムのグリッド */
-  gap: 20px; /* 各グリッドアイテムの間の余白 */
+  gap: 50px; /* 各グリッドアイテムの間の余白 */
   margin: 0 auto; /* 中央揃え */
   padding: 0 10%; /* 左右に10%の余白 */
   align-items: start; /* 上端揃え */
@@ -186,7 +186,7 @@ main {
       width: 90%; /* 幅を90%に拡大 */
     }
     .title {
-      font-size: 1.8em;
+      font-size: 1.6em;
     }
     body {
       font-size: 14px;
@@ -242,9 +242,7 @@ main {
       width: 100%; /* 幅を100%に拡大 */
     }
 
-    .title {
-      font-size: 1.6em;
-    }
+   
     body {
       font-size: 12px;
     }
