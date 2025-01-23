@@ -43,7 +43,9 @@
   
   /* 全体のフォント設定 */
   body {
+    overflow-x: hidden; /* 横スクロールを無効にする */
     min-width: 400px;
+    
 
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
