@@ -209,7 +209,6 @@ main {
     }
     .image-list li {
       width: 100%; 
-      margin: 200px auto 20px; /* 中央揃え */
     }
     
   }
