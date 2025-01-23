@@ -241,6 +241,9 @@ main {
     .vertical-image-list li {
       width: 100%; /* 幅を100%に拡大 */
     }
+    .title{
+      font-size: 20px; /* フォントサイズを少し小さく */
+    }
 
    
     body {
