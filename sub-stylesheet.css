@@ -209,6 +209,8 @@ main {
     }
     .image-list li {
       width: 100%; 
+      max-width: 1200px; /* 必要に応じて最大幅を設定 */
+      /* width: 80%; 1列表示に変更 */
     }
     
   }
