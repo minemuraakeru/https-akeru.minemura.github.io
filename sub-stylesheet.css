@@ -207,6 +207,14 @@ main {
     .nav-right .nav-button {
       text-align: left; /* 各リンクの文字を左揃え */
     }
+    .image-list li {
+      width: 100%; 
+      max-width: 1200px; /* 必要に応じて最大幅を設定 */
+      margin: 200px auto 20px; /* 中央揃え */
+      /* width: 80%; 1列表示に変更 */
+
+    }
+    
   }
 
 
