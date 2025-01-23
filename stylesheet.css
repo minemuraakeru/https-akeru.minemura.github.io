@@ -130,8 +130,6 @@
     overflow: hidden;
     position: relative;
     margin-bottom: 5px; /* 画像の下にスペースを追加 */
-    
-
   }
   
   .image-list img {
@@ -249,11 +247,12 @@
 
 
     .image-list li {
+      left: 0;
+      right: 0;
       width: 100%; 
       max-width: 1200px; /* 必要に応じて最大幅を設定 */
       /* width: 80%; 1列表示に変更 */
-      margin-right: 20px;
-      margin-left: 20px; 
+    
     }
   }
 
