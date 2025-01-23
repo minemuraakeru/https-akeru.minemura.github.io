@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+
+
+
 window.addEventListener('load', () => {
   // オープニングアニメーションが終了した後に、コンテンツを表示する
   const openingAnimation = document.querySelector('.opening-animation');
