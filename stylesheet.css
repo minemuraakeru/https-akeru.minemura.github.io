@@ -1,7 +1,8 @@
 /* デバック用 */
-* {
-  outline: 1px solid red; /* 全要素に赤い枠線を表示 */
-}
+/* * {
+  outline: 1px solid red; 
+  
+} */
 
 
 
@@ -51,7 +52,7 @@
   /* 全体のフォント設定 */
   body {
     overflow-x: hidden; /* 横スクロールを無効にする */
-    min-width: 400px;
+    /* min-width: 400px; */
 
 
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -87,6 +88,7 @@
     justify-content: flex-end; /* 右端に揃える */
     flex-grow: 1; /* 左右に余白を作るためにflex-growを追加 */
     margin-right: 60px; /* 必要なら右マージンを設定 */
+    margin-left: -20px; /* ヘッダーの高さ分だけ余白を追加 */
 
   }
   
@@ -117,11 +119,11 @@
     gap: 10px; /* 画像間の隙間 */
     margin: 200px auto 20px !important;/* 上部マージンを40pxに調整して余白を増やす */
 
-    
-    
 }
 
-
+/* #photo{
+  width:90%;
+} */
 
   
   .image-list li {
@@ -144,6 +146,22 @@
   
 
 
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
 
 /* ハンバーガーメニュー */
 .hamburger-menu {
