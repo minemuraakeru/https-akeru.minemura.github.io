@@ -192,8 +192,8 @@
   padding: 15px 20px;
   text-decoration: none;
   color: #222222; /* 白色で目立たせる */
-  font-size: 24px; /* 大きめのフォントサイズ */
-  margin-bottom: 14px; /* 選択肢間に余白 */
+  font-size: 18px; /* 大きめのフォントサイズ */
+  margin-bottom: 10px; /* 選択肢間に余白 */
   border-bottom: none; /* 下線をなくす */
   font-weight: 500;
 
@@ -250,6 +250,8 @@
 
     .image-list li {
       width: 100%; 
+      max-width: 1200px; /* 必要に応じて最大幅を設定 */
+      margin: 200px auto 20px; /* 中央揃え */
       /* width: 80%; 1列表示に変更 */
 
     }
