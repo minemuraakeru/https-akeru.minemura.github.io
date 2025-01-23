@@ -6,7 +6,8 @@
     padding: 20px 20px;
     margin-bottom: 0px; /* ヘッダーとコンテンツとの間の距離を狭める */
     /* border-bottom: 1px solid #ddd; */
-   
+    left: 0; /* 左端を0に変更 */
+    right: 0; /* 右端も0に変更 */
 
     
   }
@@ -29,7 +30,7 @@
 
 
 .nav-button:hover {
-  color: #ff9800; /* ホバー時の色 */
+  color:#ff4400; /* ホバー時の色 */
 }
 
 
@@ -139,7 +140,7 @@ main {
 /* about-section2 のスタイル */
 .about-section2 {
   width: 80%; /* 幅を全体の80%に設定 */
-  margin: 80px auto; /* 上下に間隔を追加して中央揃え */
+  margin: 30px auto; /* 上下に間隔を追加して中央揃え */
   text-align: center;
 }
 
