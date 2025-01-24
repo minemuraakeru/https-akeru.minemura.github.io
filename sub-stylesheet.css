@@ -213,20 +213,21 @@ main {
       max-width: 1200px; /* 必要に応じて最大幅を設定 */
       /* width: 80%; 1列表示に変更 */
     }
+   
 
-      /* about-section3 のスタイル */
-  .about-section3 {
-    width: 60%; /* 幅を全体の80%に設定 */
-    margin: 20px auto; /* 上下に間隔を追加して中央揃え */
-    text-align: center;
-  }
+     /* about-section3 のスタイル */
+    .about-section3 {
+      width: 60%; /* 幅を全体の80%に設定 */
+      margin: 20px auto; /* 上下に間隔を追加して中央揃え */
+      text-align: center;
+    }
 
-  .about-section3 img {
-    width: 20%; /* 画像の幅を親要素に合わせる */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+    .about-section3 img {
+      width: 20%; /* 画像の幅を親要素に合わせる */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
 
 
 

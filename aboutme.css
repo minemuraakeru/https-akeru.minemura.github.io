@@ -192,6 +192,11 @@ main {
     .vertical-image-list li {
       width: 90%; /* 幅を90%に拡大 */
     }
+    .image-list li {
+      width: 100%; 
+      max-width: 1200px; /* 必要に応じて最大幅を設定 */
+      /* width: 80%; 1列表示に変更 */
+    }
     .title {
       font-size: 1.6em;
     }
@@ -215,26 +220,46 @@ main {
     .nav-right .nav-button {
       text-align: left; /* 各リンクの文字を左揃え */
     }
-    .image-list li {
-      width: 100%; 
-      max-width: 1200px; /* 必要に応じて最大幅を設定 */
-      /* width: 80%; 1列表示に変更 */
+
+
+    .about-section {
+      display: flex;
+      flex-direction: column; /* セクション全体を縦方向に並べる */
+      align-items: center; /* 全体を中央揃え */
+      gap: 20px; /* 写真と文章の間隔 */
+      padding: 0 5%; /* 左右に余白を追加 */
     }
-
-      /* about-section3 のスタイル */
-  .about-section3 {
-    width: 60%; /* 幅を全体の80%に設定 */
-    margin: 20px auto; /* 上下に間隔を追加して中央揃え */
-    text-align: center;
-  }
-
-  .about-section3 img {
-    width: 20%; /* 画像の幅を親要素に合わせる */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
+  
+    .about-text {
+      order: 2; /* テキストを写真の後に表示 */
+      text-align: left; /* テキストを左揃え */
+      width: 100%; /* テキストを画面幅いっぱいに */
+      font-size: 14px; /* 読みやすい文字サイズ */
+      line-height: 1.6; /* 行間を調整 */
+    }
+  
+    .about-images {
+      order: 1; /* 写真を最初に表示 */
+      width: 100%; /* 写真の横幅を100%に */
+      display: flex;
+      flex-direction: column; /* 縦に並べる */
+      align-items: center; /* 写真を中央揃え */
+      gap: 10px; /* 写真の間隔 */
+    }
+  
+    .about-images img {
+      margin-bottom: 30px;
+      width: 100%; /* 写真の横幅を画面幅に合わせる */
+      max-width: 300px; /* 必要なら最大幅を設定 */
+      height: auto; /* アスペクト比を維持 */
+      object-fit: cover; /* 必要に応じて画像を調整 */
+    }
+  
+    .title {
+      font-size: 1.4em; /* タイトルの文字サイズを調整 */
+      text-align: left; /* タイトルも左揃え */
+      margin-bottom: 7px; /* タイトルと文章の余白 */
+    }
 
 
 
