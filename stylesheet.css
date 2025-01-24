@@ -208,8 +208,8 @@
   padding: 10px 20px;
   text-decoration: none;
   color: #222222; /* 白色で目立たせる */
-  font-size: 14px; /* 大きめのフォントサイズ */
-  margin-bottom: 10px; /* 選択肢間に余白 */
+  font-size: 17px; /* 大きめのフォントサイズ */
+  margin-bottom: 14px; /* 選択肢間に余白 */
   border-bottom: none; /* 下線をなくす */
   font-weight: 500;
 
