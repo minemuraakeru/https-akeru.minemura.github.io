@@ -287,6 +287,9 @@
       text-align: left; /* 各リンクの文字を左揃え */
     }
 
+    .image-list {
+      margin-top: 20px; /* 上部余白を減らして隙間を縮める */
+    }
 
     .image-list li {
       left: 0;
@@ -294,6 +297,7 @@
       width: 100%; 
       max-width: 1200px; /* 必要に応じて最大幅を設定 */
       /* width: 80%; 1列表示に変更 */
+
     
     }
   }
