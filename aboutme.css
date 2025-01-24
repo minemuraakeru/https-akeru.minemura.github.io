@@ -247,12 +247,27 @@ body {
     object-fit: cover;
     margin: 0;
   }
+    /* about-section3 のスタイル */
+    .about-section2 {
+      width: 100%; /* 幅を全体の80%に設定 */
+      margin: 0px auto; /* 上下に間隔を追加して中央揃え */
+      text-align: center;
+    }
+  
+    .about-section2 img {
+      width: 100%; /* 画像の幅を親要素に合わせる */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
 
   .title {
     font-size: 1.2em;
     text-align: left;
     margin-bottom: 10px;
   }
+  
 }
 
 /* フッター */
