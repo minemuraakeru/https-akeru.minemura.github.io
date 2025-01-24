@@ -1,298 +1,264 @@
+/* デバッグ用スタイル */
+ /* * { outline: 1px solid red; } */
 
-  /* デバック用 */
-/* * {
-  outline: 1px solid red; 
-
-} */
-
-
-
-  /* ヘッダー全般のスタイル（共通） */
-  .header {
-    /* background-color: #f8f8f8; */
-    padding: 20px 20px;
-    margin-bottom: 0px; /* ヘッダーとコンテンツとの間の距離を狭める */
-    /* border-bottom: 1px solid #ddd; */
-   
-
-    
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-
-
-/* ヘッダーリンクのスタイル */
-.nav-button {
-    font-size: 16px; /* 通常のフォントサイズ */
-    color: #333;
-    text-decoration: none; /* 下線を消す */
-    margin-right: 20px;
+/* ヘッダー全般のスタイル */
+.header {
+  padding: 20px 20px;
+  margin-bottom: 0px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-button {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+}
 
 .nav-button:hover {
-  color:#ff4400; /* ホバー時の色 */
+  color: #ff4400;
 }
 
-
-
-
-/* メインコンテンツを上下左右中央に配置 */
+/* メインコンテンツ */
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    text-align: center;
-    margin-top: 130px;
-/*     margin-top: 40px; */
-}
-
-  
-  /* タイトルの追加装飾（任意） */
-  .title {
-    font-size: 1.6em; /* タイトルのフォントサイズ調整 */
-    margin-bottom: 10px; /* タイトルと説明文の間の余白 */
-/*     margin-top: -10px; /* ネガティブ値でさらに上に移動 */ 
-    margin-top: 0px; /* ネガティブ値でさらに上に移動 */
-  }
-
-  
-  
-  /* サブページ全般のスタイル */
-  body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    line-height: 1.2; /* 行間を詰める */
-
-  }
-
-
-  
-  /* サブページ専用: 縦1列の画像リスト */
-  .vertical-image-list {
-    list-style: none;
-    padding: 0;
-    margin: 50px auto 20px; /* 上下の余白調整 */
-    width: 80%; /* リスト自体は幅全体 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* 画像を中央揃え */
-  }
-  
-  .vertical-image-list li {
-    margin-bottom: 4px; /* 画像間の間隔 !!!!!!!!!!!*/
-    width: 70%; /* 各画像の幅を70%に設定 !!!!!!*/
-  }
-  
-  .vertical-image-list img {
-    width: 100%; /* リストの幅に合わせる */
-    height: auto; /* 画像比率を保持 */
-    object-fit: cover;
-  }
-
-
-
-
-
-
-
-
-
-/* Aboutセクションをグリッドで配置 */
-.about-section {
-  display: grid; /* グリッドレイアウトを使用 */
-  grid-template-columns: 1fr 1fr; /* 2カラムのグリッド */
-  gap: 50px; /* 各グリッドアイテムの間の余白 */
-  margin: 0 auto; /* 中央揃え */
-  padding: 0 10%; /* 左右に10%の余白 */
-  align-items: start; /* 上端揃え */
-}
-
-/* 文章部分 */
-.about-text {
-  grid-column: 1; /* 左カラムに配置 */
-  font-size: 16px;
-  line-height: 1.8; /* 行間を調整して読みやすく */
-  text-align: left; /* 左揃え */
   display: flex;
-  flex-direction: column; /* 縦方向に揃える */
-  gap: 10px; /* 段落間の余白 */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  text-align: center;
+  margin-top: 130px;
 }
 
-/* 画像部分 */
+.title {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+/* サブページのスタイル */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.2;
+}
+
+/* 縦1列の画像リスト */
+.vertical-image-list {
+  list-style: none;
+  padding: 0;
+  margin: 50px auto 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical-image-list li {
+  margin-bottom: 4px;
+  width: 70%;
+}
+
+.vertical-image-list img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Aboutセクション */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 0 10%;
+  align-items: start;
+}
+
+.about-text {
+  grid-column: 1;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .about-images {
-  grid-column: 2; /* 右カラムに配置 */
-  display: flex; /* 画像を縦に並べる */
-  flex-direction: column; /* 縦並び */
-  gap: 10px; /* 各画像の間に隙間 */
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .about-images img {
-  width: 100%; /* 画像の幅を親要素に合わせる */
-  height: auto; /* アスペクト比を維持 */
-  object-fit: cover; /* 必要に応じて拡大縮小 */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-/* about-section2 のスタイル */
+/* その他のAboutセクション */
 .about-section2 {
-  width: 80%; /* 幅を全体の80%に設定 */
-  margin: 30px auto; /* 上下に間隔を追加して中央揃え */
+  width: 80%;
+  margin: 30px auto;
   text-align: center;
 }
 
 .about-section2 img {
-  width: 100%; /* 画像の幅を親要素に合わせる */
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-
-/* about-section3 のスタイル */
 .about-section3 {
-  width: 40%; /* 幅を全体の80%に設定 */
-  margin: 20px auto; /* 上下に間隔を追加して中央揃え */
+  width: 40%;
+  margin: 20px auto;
   text-align: center;
 }
 
 .about-section3 img {
-  width: 20%; /* 画像の幅を親要素に合わせる */
+  width: 20%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
+/* レスポンシブ対応 */
+@media (max-width: 900px) {
+  /* 必要に応じてスタイルを追加 */
+}
 
+@media (max-width: 600px) {
+  .vertical-image-list li {
+    width: 90%;
+  }
 
+  .title {
+    font-size: 1.6em;
+  }
 
+  body {
+    font-size: 14px;
+  }
 
+  .hamburger-menu {
+    display: flex;
+  }
 
+  .nav-left {
+    display: none;
+  }
 
+  .nav-right {
+    justify-content: flex-start;
+    margin-left: -20px;
+  }
 
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px; /* 固定値で余白を調整 */
+    width: calc(100% - 20px); /* 幅から余白を引く!!!!!!!!!!!!!!! */
+    box-sizing: border-box; /* 余白を含めたボックスサイズ計算 */
+  }
 
-  
-  
-  /* レスポンシブ対応 */
-  @media (max-width: 900px) {
+  .about-text {
+    width: 100%; /* 子要素も幅を調整 */
+    padding: 0 10px; /* 子要素の内側に余白を追加 */
+    margin-bottom: 7px; /* 余白を追加 */
+
+  }
+  .about-images {
+    width: 100%; /* 子要素も幅を調整 */
+    padding: 0 10px; /* 子要素の内側に余白を追加 */
+    margin-bottom: 7px; /* 余白を追加 */
+
   }
 
 
-  
-  @media (max-width: 600px) {
-    .vertical-image-list li {
-      width: 90%; /* 幅を90%に拡大 */
-    }
-    .image-list li {
-      width: 100%; 
-      max-width: 1200px; /* 必要に応じて最大幅を設定 */
-      /* width: 80%; 1列表示に変更 */
-    }
-    .title {
-      font-size: 1.6em;
-    }
-    body {
-      font-size: 14px;
-    }
-    .hamburger-menu {
-      display: flex; /* 画面幅が小さいときに表示 */
-    }
-    .nav-left {
-      display: none; /* 通常ナビゲーションは非表示 */
-    }
-    .nav-right {
-      justify-content: flex-start; /* 左寄せ */
-      margin-right: 0; /* 右側の余白をリセット */
-      padding-left: 0px; /* 必要なら左に余白を追加 */
-      text-align: left; /* 文字の左揃え */
-      display: flex;
-      margin-left: -20px; /* ヘッダーの高さ分だけ余白を追加 */
-    }
-    .nav-right .nav-button {
-      text-align: left; /* 各リンクの文字を左揃え */
-    }
-
-
-    .about-section {
-      display: flex;
-      flex-direction: column; /* セクション全体を縦方向に並べる */
-      align-items: center; /* 全体を中央揃え */
-      gap: 20px; /* 写真と文章の間隔 */
-      padding: 0 5%; /* 左右に余白を追加 */
-    }
-  
-    .about-text {
-      order: 2; /* テキストを写真の後に表示 */
-      text-align: left; /* テキストを左揃え */
-      width: 100%; /* テキストを画面幅いっぱいに */
-      font-size: 14px; /* 読みやすい文字サイズ */
-      line-height: 1.6; /* 行間を調整 */
-    }
-  
-    .about-images {
-      order: 1; /* 写真を最初に表示 */
-      width: 100%; /* 写真の横幅を100%に */
-      display: flex;
-      flex-direction: column; /* 縦に並べる */
-      align-items: center; /* 写真を中央揃え */
-      gap: 10px; /* 写真の間隔 */
-    }
-  
-    .about-images img {
-      margin-bottom: 30px;
-      width: 100%; /* 写真の横幅を画面幅に合わせる */
-      max-width: 300px; /* 必要なら最大幅を設定 */
-      height: auto; /* アスペクト比を維持 */
-      object-fit: cover; /* 必要に応じて画像を調整 */
-    }
-  
-    .title {
-      font-size: 1.4em; /* タイトルの文字サイズを調整 */
-      text-align: left; /* タイトルも左揃え */
-      margin-bottom: 7px; /* タイトルと文章の余白 */
-    }
-
-
-
-
-    
+  .about-images img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 30px;
   }
 
-
-  
-  @media (max-width: 400px) {
-    .vertical-image-list li {
-      width: 100%; /* 幅を100%に拡大 */
-    }
-    .title{
-      font-size: 20px; /* フォントサイズを少し小さく */
-    }
-
-   
-    body {
-      font-size: 12px;
-    }
+  .title {
+    font-size: 1.4em;
+    text-align: left;
+    margin-bottom: 7px;
   }
-  
+}
 
+@media (max-width: 400px) {
+  .vertical-image-list li {
+    width: 100%;
+  }
 
+  .title {
+    font-size: 20px;
+  }
 
-  
-  /* フッター全体のスタイル */
+  body {
+    font-size: 12px;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 5%;
+  }
+
+  .about-text {
+    order: 2;
+    text-align: left;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .about-images {
+    order: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .about-images img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+
+/* フッター */
 .footer {
-    text-align: center; /* テキストを中央揃え */
-    /* padding: 40px 0; 上下の余白 */
-    margin-top: 40px; /* コンテンツとの距離 */
-    font-size: 14px; /* フォントサイズを少し小さく */
-    color: #666; /* フォント色 */
-  }
-  
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+}

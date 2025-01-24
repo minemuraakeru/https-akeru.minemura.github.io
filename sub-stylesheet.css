@@ -213,7 +213,11 @@ main {
       max-width: 1200px; /* 必要に応じて最大幅を設定 */
       /* width: 80%; 1列表示に変更 */
     }
-   
+    .about-images {
+      margin-bottom: 20px;
+      gap: 0px; /* 各画像の間に隙間 */
+
+    }
 
      /* about-section3 のスタイル */
     .about-section3 {
@@ -245,11 +249,55 @@ main {
     .title{
       font-size: 20px; /* フォントサイズを少し小さく */
     }
-
-   
     body {
       font-size: 12px;
     }
+  .about-section {
+    display: flex;
+    flex-direction: column; /* 縦方向に並べる */
+    align-items: center; /* 中央揃え */
+    gap: 20px; /* 要素間の余白 */
+    padding: 0 5%; /* 左右の余白を追加して揃える */
+  }
+
+  .about-text {
+    order: 2; /* テキストを画像の後に表示 */
+    text-align: left; /* 左揃え */
+    width: 100%; /* 画面幅に合わせて広げる */
+    font-size: 12px; /* 文字サイズを調整 */
+    line-height: 1.5; /* 行間を詰めすぎない */
+    padding: 0; /* 余白なし */
+  }
+
+  .about-images {
+    order: 1; /* 画像を先に表示 */
+    width: 100%; /* 親要素幅いっぱいに */
+    display: flex;
+    flex-direction: column; /* 縦並び */
+    align-items: center; /* 画像を中央揃え */
+    gap: 10px; /* 画像間の余白を調整 */
+    padding: 0; /* 余白なし */
+  }
+
+  .about-images img {
+    width: 100%; /* 画像幅を親要素と同じに */
+    max-width: 100%; /* 最大幅を親要素いっぱいに */
+    height: auto; /* アスペクト比を保持 */
+    object-fit: cover; /* 必要に応じてトリミング */
+    margin: 0; /* 左右の余白をリセット */
+  }
+
+  .title {
+    font-size: 1.2em; /* タイトルのサイズ調整 */
+    text-align: left; /* 左揃え */
+    margin-bottom: 10px; /* タイトルと文章間の余白 */
+  }
+
+
+
+
+
+
   }
   
 
