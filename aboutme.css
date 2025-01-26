@@ -45,7 +45,7 @@ main {
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 16px;/* !!!!!!!!!!!!!!! */
   color: #333;
   line-height: 1.2;
 }
@@ -84,8 +84,8 @@ body {
 
 .about-text {
   grid-column: 1;
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 15px;/* !!!!!!!!!!!!!!! */
+  line-height: 1.5;/* 行間 */
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -135,6 +135,38 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+
+
+
+.link-with-arrow {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4b4b4b; /* ホバー時の色 */
+  font-weight: 900;
+}
+.link-with-arrow:hover{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+  color: #ff4400; /* ホバー時の色 */
+  font-weight: 900;
+}
+.link-with-arrow::after {
+  content: '↗';
+  margin-left: 4px;
+  font-size: 0.6em;
+  transform: translateY(1px);
+}
+
+
+
+
+
+
+
+
 
 /* フッター */
 .footer {
@@ -200,8 +232,6 @@ body {
     margin-bottom: 7px; /* 余白を追加 */
 
   }
-
-
   .about-images img {
     width: 90%;
     max-width: 300px;
@@ -209,6 +239,22 @@ body {
     object-fit: cover;
     margin-bottom: 30px;
   }
+  /* <!-- お花ー --> */
+.about-section3 {
+  width: 40%;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  /* margin-bottom: ; */
+  text-align: center;
+}
+
+.about-section3 img {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
   .title {
     font-size: 1.4em;

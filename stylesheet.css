@@ -20,7 +20,7 @@
     z-index: 1000; /* 他の要素の上に配置する */
   }
 
-  
+
 
 
   
@@ -51,6 +51,11 @@
   
   /* 全体のフォント設定 */
   body {
+    cursor: url('images/icon.png'), auto;
+
+
+
+
     overflow-x: hidden; /* 横スクロールを無効にする */
     /* min-width: 400px; */
 
