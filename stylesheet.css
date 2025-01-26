@@ -117,7 +117,6 @@
     width: 80%; /* 通常時は幅70% */
     gap: 10px; /* 画像間の隙間 */
     margin: 150px auto 20px !important;/* 上部マージンを40pxに調整して余白を増やす */
-
 }
 
 /* #photo{
@@ -133,6 +132,7 @@
     margin-bottom: 5px; /* 画像の下にスペースを追加 */
   }
   
+  
   .image-list img {
     position: absolute;
     top: 0;
@@ -141,6 +141,11 @@
     height: 100%;
     object-fit: cover;
   }
+
+  /* .image-list img :hover{
+    size: 110%;
+  } */
+
 
   
 
@@ -290,6 +295,8 @@
     .image-list {
       margin-top: 20px; /* 上部余白を減らして隙間を縮める */
     }
+
+
 
     .image-list li {
       left: 0;
