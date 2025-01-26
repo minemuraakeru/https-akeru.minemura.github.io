@@ -258,7 +258,7 @@ main {
 .footer {
     text-align: center; /* テキストを中央揃え */
     /* padding: 40px 0; 上下の余白 */
-    margin-top: 40px; /* コンテンツとの距離 */
+    margin-top: 100px; /* コンテンツとの距離 */
     font-size: 14px; /* フォントサイズを少し小さく */
     color: #666; /* フォント色 */
   }
