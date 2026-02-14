@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const menuButton = document.querySelector(".hamburger-menu");
-  const menuContent = document.querySelector(".menu-content");
+  const menuButton = document.querySelector(".hamburger");
+  const menuOverlay = document.querySelector(".menu-overlay");
 
-  menuButton.addEventListener("click", () => {
-    menuContent.classList.toggle("active");
-  });
-
-  // メニュー外をクリックしたときに閉じる
-  menuContent.addEventListener("click", (e) => {
-    if (e.target === menuContent) {
-      menuContent.classList.remove("active");
-    }
-  });
+  if (menuButton && menuOverlay) {
+    menuButton.addEventListener("click", () => {
+      menuOverlay.classList.toggle("is-open");
+    });
+    menuOverlay.addEventListener("click", (e) => {
+      if (e.target === menuOverlay) {
+        menuOverlay.classList.remove("is-open");
+      }
+    });
+  }
 });
 
 
