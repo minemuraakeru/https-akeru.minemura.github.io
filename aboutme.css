@@ -125,6 +125,17 @@ body {
 
 
 
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 4px;
+}
+.link-sep {
+  color: #4b4b4b;
+  font-weight: 400;
+  user-select: none;
+}
 .link-with-arrow {
   display: inline-flex;
   align-items: center;

@@ -15,7 +15,7 @@ main {
     font-size: 1.1em;
     font-weight: 400;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #333;
+    color: #f5f5f5;
     margin-bottom: 4px;
     margin-top: 0;
   }
@@ -25,7 +25,7 @@ main {
     font-size: 12px;
     font-weight: 400;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #333;
+    color: #a0a0a0;
     margin: 0;
     line-height: 1.5;
   }
@@ -38,7 +38,7 @@ main {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: #f5f5f5;
     line-height: 1.2; /* 行間を詰める */
 
   }
@@ -57,29 +57,33 @@ main {
   }
   
   .vertical-image-list li {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     width: 70%;
-    background: #e5e5e5;
+    background: transparent;
     position: relative;
     overflow: hidden;
+    border: none;
+  }
+  .vertical-image-list li:last-child {
+    margin-bottom: 0;
   }
   
+  /* 白線・白オーバーレイを出さないよう無効化 */
   .vertical-image-list li::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.35) 50%, transparent 100%);
-    animation: skeleton-shimmer 1.5s ease-in-out infinite;
-    pointer-events: none;
+    content: none;
+    display: none;
   }
   
   .vertical-image-list img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    background: #e5e5e5;
+    background: transparent;
     position: relative;
     z-index: 1;
+    display: block;
+    vertical-align: top;
+    line-height: 0;
   }
   
   @keyframes skeleton-shimmer {
