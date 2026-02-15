@@ -317,12 +317,12 @@ main {
   margin-right: auto;
   width: 80%; /* 通常時は幅70% */
 }
-/* 共通フッタースタイル */
+/* 共通フッタースタイル（著作権10pxに統一） */
 .footer {
   text-align: center;
   margin-top: 160px;
   padding: 0;
-  font-size: 12px;
+  font-size: 10px;
   color: #a0a0a0;
 }
 
@@ -353,7 +353,7 @@ main {
       text-align: center;
       margin-top: 120px;
       padding: 0;
-      font-size: 12px;
+      font-size: 10px;
       color: #a0a0a0;
     }
   }

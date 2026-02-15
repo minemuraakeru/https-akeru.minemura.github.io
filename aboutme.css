@@ -1,14 +1,17 @@
 /* デバッグ用スタイル */
  /* * { outline: 1px solid red; } */
 
-/* メインコンテンツ */
+/* メインコンテンツ：上下マージン消してhomeと同じ高さ(72+80px)から開始 */
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  min-height: 50vh;
+  flex: 1 0 auto;
   text-align: center;
+  padding-top: 152px;
+  padding-bottom: 0;
+  margin: 0;
 }
 
 
@@ -21,13 +24,16 @@ main {
   margin-left: 0;
 }
 
-/* サブページのスタイル */
+/* サブページのスタイル（bodyをflexにしてfavicon・著作権を下から4pxに） */
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;/* !!!!!!!!!!!!!!! */
-  color: #333;
+  color: #f5f5f5;
   line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* 縦1列の画像リスト */
@@ -52,12 +58,11 @@ body {
   object-fit: cover;
 }
 
-/* Aboutセクション */
+/* Aboutセクション（homeと同じ高さから始まるので上マージン最小） */
 .about-section {
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
   gap: 0px;
-  margin-top: 10px;
+  margin-top: 0;
   margin-right: auto;
   margin-left: auto;
   width: 80%;
@@ -105,13 +110,13 @@ body {
   margin: 0 auto;
 }
 
-/* <!-- お花ー --> */
+/* 花（ファビコン・白）margin-top: autoで下寄せ、著作権との距離2px */
 .about-section3 {
   width: 40%;
-  margin-top: 100px;
+  margin-top: auto;
+  margin-bottom: 2px;
   margin-right: auto;
   margin-left: auto;
-  /* margin-bottom: ; */
   text-align: center;
 }
 
@@ -120,6 +125,12 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/* 花と著作権の間隔10px、下端から4px */
+.footer {
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
 
@@ -132,29 +143,38 @@ body {
   gap: 0 4px;
 }
 .link-sep {
-  color: #4b4b4b;
+  color: #f5f5f5;
   font-weight: 400;
   user-select: none;
 }
+/* ヘッダーと統一：下線スライド＋opacity */
 .link-with-arrow {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: #4b4b4b; /* ホバー時の色 */
+  color: #f5f5f5;
   font-weight: 900;
-}
-.link-with-arrow:hover{
-  display: inline-flex;
-  align-items: center;
-  text-decoration: underline;
-  color: #ff4400; /* ホバー時の色 */
-  font-weight: 900;
+  position: relative;
+  transition: opacity 0.25s ease;
 }
 .link-with-arrow::after {
-  content: '↗';
-  margin-left: 4px;
-  font-size: 0.6em;
-  transform: translateY(1px);
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+.link-with-arrow:hover {
+  opacity: 0.85;
+}
+.link-with-arrow:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 
@@ -223,14 +243,18 @@ body {
     text-align: center;
   } 
 
-  /* <!-- お花ー --> */
+  /* 花（ファビコン・白） */
   .about-section3 {
     width: 40%;
-    margin-top: 100px;
+    margin-top: auto;
+    margin-bottom: 2px;
     margin-right: auto;
     margin-left: auto;
-    /* margin-bottom: ; */
     text-align: center;
+  }
+  .footer {
+    margin-top: 0;
+    margin-bottom: 4px;
   }
   .about-section3 img {
     width: 20%;
